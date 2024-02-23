@@ -1,40 +1,43 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blanchedalmond;
+
+
+}
+
 ul,
-ol{
+ol {
     list-style: none;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-/* ---------- HEADER-----------*/ 
+/* ---------- HEADER-----------*/
 
 header {
-    display: flex;   /*-----FLEX----*/
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-    gap: 1rem;
+    display: flex;
     padding: 1rem;
 }
-header ul li{
+
+/* header ul li{
     margin-bottom: 0.5rem;
 }
 
 @media only screen and (min-width: 768px) {
     header{
-        display: grid; /* -------GRID ------*/
+        display: grid; 
         grid-template-columns: 1fr 1fr;
     }
     header h1{
@@ -44,7 +47,7 @@ header ul li{
         grid-column: 1/3;
     }
     header ul{
-        display: flex;  /*------ FLEX------- */
+        display: flex;  
         justify-content: center;
         gap: 1rem;
     }
@@ -52,111 +55,177 @@ header ul li{
         display: inline-block;
         justify-self: end;
     }
-}
-@media only screen and (min-width: 1200px){
+} */
+/* @media only screen and (min-width: 1200px){
 header{
-    display: flex; /*------ FLEX------- */
+    display: flex; 
     flex-direction: row;
     justify-content: space-between;
-}
-}
-
-/* --------.--- MAIN----------*/
-.inicio-pagina{
-    background-image: url(https://c.wallhere.com/photos/5d/59/Vladstudio-125139.jpg!d);
-   
-}
-/* h2{
-    padding: 2rem;
-    color: aliceblue;
 } */
 
-.galeria-index{
-    padding: 0;
-    
+
+/* --------.--- MAIN----------*/
+.inicio-pagina {
+    /* background-image: url(https://c.wallhere.com/photos/5d/59/Vladstudio-125139.jpg!d); */
+    background-color: rgb(46, 46, 46);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
 }
-.titulo-galeria{
+
+.inicio-texto {
+    display: flex;
+    height: 100%;
+}
+
+#presentacion-texto {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+
+}
+
+.galeria-index {
+    padding: 0;
+
+}
+
+.titulo-galeria {
     text-align: center;
     margin-bottom: 1rem;
-    padding: 2rem;
+    padding: 1rem;
     color: aliceblue;
     text-shadow: black;
     border: black 10px;
 }
-.contenedor-galeria img{
+
+.contenedor-galeria img {
     width: 90%;
     height: 90%;
     object-fit: cover;
     padding: 0.25rem;
 }
 
-.contenedor-galeria{
+.contenedor-galeria {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-@media only screen and (min-width: 768px){
-    .contenedor-galeria{
+@media only screen and (min-width: 768px) {
+    .contenedor-galeria {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(4,minmax(300px,25vh));
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, minmax(300px, 25vh));
         gap: 1rem;
+        align-items: center;
+        justify-items: center;
     }
-    .img-destacada{
+
+    .img-destacada {
         grid-column: span 2;
         grid-row: span 2;
+
     }
 }
-@media only screen and (min-width: 1200px){
-    .contenedor-galeria{
+
+@media only screen and (min-width: 1200px) {
+    .contenedor-galeria {
         grid-template-columns: 2fr 1fr 1fr;
-        grid-template-rows: repeat(2,minmax(280px,25vh));
+        grid-template-rows: repeat(2, minmax(280px, 25vh));
     }
-    .img-destacada{
+
+    .img-destacada {
         grid-column: span 1;
     }
+
+    /* .container-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2,minmax(280px,25vh));
+        
+        
+    } */
 }
 
 /* ------- contacto html -------*/
-.contacto-inicio{
+.contacto-inicio {
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     padding: 1rem;
-    background-image: url(https://us.123rf.com/450wm/foxindustry/foxindustry1502/foxindustry150200003/36172400-fondo-azul-resumen-ola-suave-luz-del-cielo-en-colores-pastel-del-vector.jpg?ver=6);
+    background-color: rgb(46, 46, 46);
+    /* background-image: url(https://us.123rf.com/450wm/foxindustry/foxindustry1502/foxindustry150200003/36172400-fondo-azul-resumen-ola-suave-luz-del-cielo-en-colores-pastel-del-vector.jpg?ver=6); */
     width: 100%;
     height: 100%;
 }
-.contacto-logo{
+
+.contacto-logo {
     padding: 1rem;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.contacto-logo img{
+
+.contacto-logo img {
     display: flex;
     align-self: center;
     width: 50%;
     height: 50%;
 }
-#contacto-titulo{
+
+#contacto-titulo {
     font-family: "Kode Mono", monospace;
     font-size: 100%;
     padding: 1rem;
+    color: antiquewhite;
+    background-color: rgb(29, 29, 33);
 }
-.parrafos{
+
+.parrafos {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 100%;
     text-align: center;
-    
+
+}
+
+/*------ UBICACIOM ------*/
+
+.ubicacion-inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: rgb(46, 46, 46);
+    /* background-image: url(https://us.123rf.com/450wm/foxindustry/foxindustry1502/foxindustry150200003/36172400-fondo-azul-resumen-ola-suave-luz-del-cielo-en-colores-pastel-del-vector.jpg?ver=6); */
+    width: 100%;
+    height: 100%;
+}
+
+#ubicacion-section {
+    padding: 1rem;
+    height: 100%;
+    width: 100%;
+}
+
+#h3-ubicacion {
+    color: antiquewhite;
+    text-align: center;
+}
+
+.mapa-ubi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*-------- footer------ */
 
-footer{
-    background-color: black;
+footer {
+    background-color: rgb(29, 29, 33);
     color: whitesmoke;
     font-size: 100%;
     height: 50px;
