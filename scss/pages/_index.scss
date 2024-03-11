@@ -15,7 +15,8 @@
     text-align: center;
     width: 100%;
     height: 100%;
-    font-size: 100%;
+    font-size: 80%;
+    color: antiquewhite;
 
 }
 
@@ -31,6 +32,11 @@
     color: aliceblue;
     text-shadow: black;
     border: black 10px;
+
+    &hover{
+    border: white 1px;
+    color: rgb(0, 0, 0);
+    }
 }
 
 .contenedor-galeria img {
