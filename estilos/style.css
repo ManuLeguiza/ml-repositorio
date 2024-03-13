@@ -20,7 +20,7 @@ img {
 
 footer {
   background-color: rgb(29, 29, 33);
-  color: whitesmoke;
+  color: rgb(244, 156, 42);
   font-size: 100%;
   height: 50px;
   text-align: center;
@@ -31,10 +31,8 @@ header {
   display: flex;
   padding: 1rem;
 }
-
-.navbar-brand {
+header nav div a {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  color: rgb(255, 255, 0);
 }
 
 .contacto-inicio {
@@ -70,6 +68,10 @@ header {
   color: antiquewhite;
   background-color: rgb(29, 29, 33);
 }
+#contacto-titulo:hover {
+  background-color: rgb(210, 187, 8);
+  color: rgb(46, 46, 46);
+}
 
 .inicio-pagina {
   /* background-image: url(https://c.wallhere.com/photos/5d/59/Vladstudio-125139.jpg!d); */
@@ -94,11 +96,13 @@ header {
   margin-bottom: 1rem;
   padding: 1rem;
   color: rgb(210, 187, 8);
-  text-shadow: black;
-  border: rgb(255, 255, 255);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: rgb(29, 29, 33);
   font-size: 25px;
+}
+.titulo-galeria:hover {
+  background-color: rgb(253, 220, 135);
+  color: rgb(46, 46, 46);
 }
 
 .parrafos {
@@ -107,6 +111,10 @@ header {
   text-align: center;
   color: rgb(253, 220, 135);
   border: black;
+}
+.parrafos:hover {
+  background-color: rgb(253, 220, 135);
+  color: rgb(46, 46, 46);
 }
 
 .contenedor-galeria img {
@@ -174,21 +182,25 @@ header {
 }
 
 .info-h2 {
-  color: antiquewhite;
+  color: rgb(210, 187, 8);
   text-align: center;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  background-color: rgb(33, 33, 37);
+  background-color: rgb(29, 29, 33);
 }
 
 .info-h1 {
   font-family: "Kode Mono", monospace;
-  color: antiquewhite;
+  color: rgb(210, 187, 8);
   padding: 1rem;
-  background-color: rgb(33, 33, 37);
+  background-color: rgb(29, 29, 33);
+}
+.info-h1:hover {
+  background-color: rgb(210, 187, 8);
+  color: rgb(46, 46, 46);
 }
 
 .info-lista ul li {
-  color: antiquewhite;
+  color: rgb(253, 220, 135);
   list-style: circle;
   gap: 1rem;
 }
@@ -216,9 +228,14 @@ header {
 
 .pf-h1 {
   font-family: "Kode Mono", monospace;
-  color: antiquewhite;
+  color: rgb(210, 187, 8);
+  text-align: center;
   padding: 1rem;
   background-color: rgb(33, 33, 37);
+}
+.pf-h1:hover {
+  background-color: rgb(210, 187, 8);
+  color: rgb(46, 46, 46);
 }
 
 .preguntas-h2 {
@@ -230,6 +247,10 @@ header {
   background-color: rgb(33, 33, 37);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: aqua;
+}
+.pf-p:hover {
+  background-color: rgb(210, 187, 8);
+  color: rgb(29, 29, 33);
 }
 
 .question {
@@ -258,12 +279,19 @@ header {
 }
 
 #h3-ubicacion {
-  color: antiquewhite;
+  color: rgb(210, 187, 8);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
+  background-color: rgb(29, 29, 33);
+}
+#h3-ubicacion:hover {
+  background-color: rgb(210, 187, 8);
+  color: rgb(46, 46, 46);
 }
 
 .mapa-ubi {
   display: flex;
+  margin: 1rem;
   align-items: center;
   justify-content: center;
 }

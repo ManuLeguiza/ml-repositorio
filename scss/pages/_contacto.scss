@@ -30,5 +30,10 @@
     padding: 1rem;
     color: antiquewhite;
     background-color: rgb(29, 29, 33);
+
+    &:hover{
+        background-color: $color-titulos;
+        color: $color-primary;
+    }
 }
 

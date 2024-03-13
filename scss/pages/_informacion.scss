@@ -4,7 +4,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 1rem;
-    background-color: rgb(46, 46, 46);
+    background-color: $color-primary;
     width: 100%;
     height: 100%;
 }
@@ -20,21 +20,26 @@
 }
 
 .info-h2 {
-    color: antiquewhite;
+    color: $color-titulos;
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: rgb(33, 33, 37);
+    background-color: $color-secundary;
 }
 
 .info-h1 {
     font-family: "Kode Mono", monospace;
-    color: antiquewhite;
+    color: $color-titulos;
     padding: 1rem;
-    background-color: rgb(33, 33, 37);
+    background-color: $color-secundary;
+
+    &:hover{
+        background-color: $color-titulos;
+        color: $color-primary;
+    }
 }
 
 .info-lista ul li {
-    color: antiquewhite;
+    color: $color-parrafos;
     list-style: circle;
     gap: 1rem;
 }
