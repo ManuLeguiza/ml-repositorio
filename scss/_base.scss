@@ -8,10 +8,6 @@
     text-decoration: none;
   }
   
-  p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: blanchedalmond;
-  }
   
   ul,
   ol {
@@ -22,6 +18,19 @@
     max-width: 100%;
   }
   
+
+
+$color-primary:  rgb(46, 46, 46);
+$color-secundary: rgb(29, 29, 33);
+$color-parrafos: rgb(253, 220, 135);
+$color-titulos:rgb(210, 187, 8);
+
+$colores-redes: (
+  twitter: rgb(0, 157, 255),
+  facebook: blue,
+  youtube: red,
+  tiktok: black,
+);
 
   
   /*# sourceMappingURL=style.css.map */
