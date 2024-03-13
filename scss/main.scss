@@ -1,1 +1,10 @@
-@import "base"
+@import "base";
+
+@import "components/footer";
+@import "components/header";
+
+@import "pages/contacto";
+@import "pages/index";
+@import "pages/informacion";
+@import "pages/pregfrec";
+@import "pages/ubicacion";
