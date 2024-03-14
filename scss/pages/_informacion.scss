@@ -4,7 +4,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 1rem;
-    background-color: $color-primary;
+    background: linear-gradient(to bottom, $color-primary, rgb(20, 20, 20));
     width: 100%;
     height: 100%;
 }
@@ -24,6 +24,11 @@
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: $color-secundary;
+
+    &:hover{
+        background-color: $color-titulos;
+        color: $color-primary;
+    }
 }
 
 .info-h1 {
@@ -42,4 +47,5 @@
     color: $color-parrafos;
     list-style: circle;
     gap: 1rem;
+    background-color: $color-secundary;
 }

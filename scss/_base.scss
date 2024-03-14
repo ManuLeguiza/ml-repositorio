@@ -37,5 +37,12 @@ $colores-redes: (
   tiktok: black,
 );
 
+@each $clave, $valor in $colores-redes {
+  .btn-#{$clave} {
+    padding:1rem 2rem;
+    border: 2px solid #{$valor};
+    background-color: #{$valor};
+  }
+}
   
   /*# sourceMappingURL=style.css.map */

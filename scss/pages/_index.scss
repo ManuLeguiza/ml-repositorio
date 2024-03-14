@@ -1,6 +1,5 @@
 .inicio-pagina {
-    /* background-image: url(https://c.wallhere.com/photos/5d/59/Vladstudio-125139.jpg!d); */
-    background-color: $color-primary;
+    background: linear-gradient(to bottom, $color-primary, rgb(20, 20, 20));
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -28,7 +27,7 @@
     font-size: 25px;
 
     &:hover{
-        background-color: $color-parrafos;
+        background-color: $color-titulos;
         color: $color-primary;
     }
 }
