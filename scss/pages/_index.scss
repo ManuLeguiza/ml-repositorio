@@ -26,11 +26,12 @@
     background-color: $color-secundary;
     font-size: 35px;
 
-    &:hover{
+    &:hover {
         background-color: $color-titulos;
         color: $color-primary;
     }
 }
+
 .parrafos {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 100%;
@@ -38,27 +39,35 @@
     color: $color-parrafos;
     border: black;
 
-    &:hover{
+    &:hover {
         background-color: $color-parrafos;
         color: $color-primary;
     }
 
-}
-.contenedor-galeria img {
-    width: 90%;
-    height: 90%;
-    object-fit: cover;
-    padding: 0.25rem;
 }
 
 .contenedor-galeria {
     display: flex;
     flex-direction: column;
     align-items: center;
-   
-   
-}
+    gap: 2rem;
 
+    img {
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+        padding: 0.25rem;
+        border-radius: 9%;
+        transition-duration: 1s;
+        transition-delay: 0.1s;
+
+        &:hover {
+            scale: 112%;
+            box-shadow: 20px 20px 3px;
+        }
+    }
+
+}
 
 @media only screen and (min-width: 768px) {
     .contenedor-galeria {
