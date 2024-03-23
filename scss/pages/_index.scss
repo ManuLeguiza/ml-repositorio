@@ -24,7 +24,7 @@
 
         .caja-index {
             height: 400px;
-            background-color: aqua;
+            background:linear-gradient(to bottom, $color-titulos, rgb(198, 139, 1));
             padding: 0.5rem;
             border-radius: 28px;
             display: flex;
@@ -42,15 +42,21 @@
             h2 {
                 font-size: 100%;
                 text-align: center;
+                font-weight: 700;
+                font-style: italic;
             }
 
             h3 {
                 font-size: 100%;
                 text-align: Right;
+                font-weight: 700;
+                font-style: italic;
             }
 
             h4 {
                 font-size: 100%;
+                font-weight: 700;
+                font-style: italic;
             }
 
             div {
@@ -59,7 +65,7 @@
                 padding: 1rem;
 
                 .boton-1 {
-                    background-color: blue;
+                    background: radial-gradient(rgb(34, 34, 253), rgb(2, 25, 110));
                     display: flex;
                     flex-direction: row;
                     color: $color-titulos;
@@ -69,13 +75,23 @@
                     text-align: center;
                     align-items: center;
                     border-radius: 28px;
+                    border: 2px solid black;
 
+                    &:hover {
+                        transform: scale(1.08);
+                        background: radial-gradient(rgb(67, 155, 255), rgb(6, 44, 184));
+                        
+                        a{
+                            color: yellow;
+                            font-size: 25px;
+                        }
+                    }
 
 
                 }
 
                 .boton-2 {
-                    background-color: red;
+                    background: radial-gradient(rgb(255, 67, 67), rgb(135, 3, 3));
                     width: 150px;
                     color: $color-titulos;
                     padding: 0.8rem 1rem;
@@ -85,6 +101,18 @@
                     text-align: center;
                     align-items: center;
                     border-radius: 28px;
+                    border: 2px solid black;
+
+                    &:hover {
+                        transform: scale(1.08);
+                        background: radial-gradient(rgb(253, 124, 124), #ff2727);
+                        
+                        a{
+                            color: yellow;
+                            font-size: 25px;
+                        }
+                    }
+                    
                 }
             }
         }
