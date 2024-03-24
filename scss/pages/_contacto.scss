@@ -1,12 +1,57 @@
-.contacto-inicio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 1rem;
+.main-contacto {
     background: linear-gradient(to bottom, $color-primary, rgb(20, 20, 20));
     width: 100%;
     height: 100%;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+
+    section {
+        article {
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            img {
+                display: flex;
+                align-self: center;
+                margin: 1rem;
+                width: 50%;
+                height: 50%;
+            }
+
+            h3{
+                font-family: "Kode Mono", monospace;
+                font-size: 100%;
+                padding: 1rem;
+                color: $color-titulos;
+                text-align: center;
+                background-color: rgb(29, 29, 33);
+
+                &:hover {
+                    background-color: $color-titulos;
+                    color: $color-primary;
+                    transform: scale(1.10);
+                }
+            }
+
+            #contacto-titulo {
+                font-family: "Kode Mono", monospace;
+                font-size: 100%;
+                padding: 1rem;
+                color: antiquewhite;
+                background-color: rgb(29, 29, 33);
+            
+                &:hover {
+                    background-color: $color-titulos;
+                    color: $color-primary;
+                    transform: scale(1.10);
+                }
+            }
+        }
+    }
 }
 
 .contacto-logo {
@@ -21,18 +66,5 @@
     align-self: center;
     width: 50%;
     height: 50%;
-}
-
-#contacto-titulo {
-    font-family: "Kode Mono", monospace;
-    font-size: 100%;
-    padding: 1rem;
-    color: antiquewhite;
-    background-color: rgb(29, 29, 33);
-
-    &:hover{
-        background-color: $color-titulos;
-        color: $color-primary;
-    }
 }
 

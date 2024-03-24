@@ -1,10 +1,16 @@
 .main-index {
     background: linear-gradient(to bottom, $color-primary, rgb(20, 20, 20));
-    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+
     display: flex;
     flex-direction: column;
 
     .inicio-index {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
 
         .titulo-index {
             text-align: center;
@@ -14,7 +20,7 @@
             color: $color-titulos;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             background-color: $color-secundary;
-            font-size: 35px;
+            font-size: 28px;
 
             &:hover {
                 background-color: $color-titulos;
@@ -23,7 +29,9 @@
         }
 
         .caja-index {
-            height: 400px;
+            align-self: center;
+            height: 330px;
+            width: 100%;
             background: linear-gradient(to bottom, $color-titulos, rgb(198, 139, 1));
             padding: 0.5rem;
             border-radius: 28px;
@@ -31,10 +39,10 @@
             flex-direction: column;
 
             a {
-                text-decoration: none;
                 color: $color-titulos;
-                font-weight: 700;
-                font-size: 23px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 22px;
+                text-decoration: none;
             }
 
             h2 {
@@ -59,24 +67,23 @@
 
             div {
                 display: flex;
-                gap: 2rem;
+                flex-direction: row;
+                gap: 1rem;
                 padding: 1rem;
+                width: 100%;
 
                 .boton-contacto {
-                    background: radial-gradient(rgb(7, 7, 44), rgb(1, 4, 12));
+                    background: repeating-linear-gradient(to bottom right, black 0% 5%, rgb(14, 14, 14) 20%);
                     display: flex;
                     flex-direction: row;
-                    padding: 0.8rem 1rem;
-                    height: 270px;
-                    width: 150px;
-                    text-align: center;
                     align-items: center;
+                    text-align: center;
+                    justify-content: center;
+                    padding: 0.8rem 1rem;
+                    height: 200px;
+                    width: 100%;
                     border-radius: 28px;
                     border: 2px solid black;
-
-                    a {
-                        color: $color-titulos;
-                    }
 
                     &:hover {
                         transform: scale(1.08);
@@ -87,20 +94,19 @@
                             font-size: 25px;
                         }
                     }
-
-
                 }
 
                 .boton-info {
-                    background: radial-gradient(rgb(103, 22, 22), rgb(25, 5, 5));
-                    width: 150px;
-                    color: $color-titulos;
+                    background: repeating-linear-gradient(to bottom left, black 0% 5%, rgb(14, 14, 14) 20%);
                     padding: 0.8rem 1rem;
                     display: flex;
                     flex-direction: row;
-                    height: 270px;
+                    height: 200px;
+                    width: 100%;
                     text-align: center;
                     align-items: center;
+                    justify-content: center;
+
                     border-radius: 28px;
                     border: 2px solid black;
 
@@ -113,7 +119,6 @@
                             font-size: 25px;
                         }
                     }
-
                 }
             }
         }
@@ -124,21 +129,24 @@
             color: $color-titulos;
             text-align: center;
             padding: 1rem;
-            font-size: 28px;
+            margin: 1rem;
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: $color-secundary;
         }
 
         .p-index {
             display: flex;
             background-color: $color-secundary;
             border: 1px solid rgba(255, 178, 24, 0.863);
-            text-align: justify;
+            text-align: center;
 
             p {
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 font-size: 100%;
-                text-align: right;
                 color: $color-parrafos;
             }
+
             &:hover {
                 background-color: $color-parrafos;
                 color: $color-primary;
@@ -158,6 +166,16 @@
 
     .galeria-index {
         padding: 0;
+
+        h2 {
+            color: $color-titulos;
+            text-align: center;
+            padding: 1rem;
+            margin: 1rem;
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: $color-secundary;
+        }
 
         .contenedor-galeria {
             display: flex;
@@ -187,8 +205,10 @@
 
 
 
-@media only screen and (min-width: 458px) {
+@media only screen and (min-width: 768px) {
     .main-index {
+        width: 100%;
+
         .inicio-index {
             .caja-index {
                 display: none;
