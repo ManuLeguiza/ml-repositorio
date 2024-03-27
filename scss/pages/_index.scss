@@ -133,6 +133,11 @@
             font-size: 25px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             background-color: $color-secundary;
+
+            &:hover {
+                background-color: $color-titulos;
+                color: $color-primary;
+            }
         }
 
         .p-index {
@@ -175,6 +180,11 @@
             font-size: 25px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             background-color: $color-secundary;
+
+            &:hover {
+                background-color: $color-titulos;
+                color: $color-primary;
+            }
         }
 
         .contenedor-galeria {
@@ -250,6 +260,8 @@
             h2 {
                 text-align: center;
                 margin-left: 150px;
+                margin-right: 150px;
+                font-size: 42px;
             }
 
             .p-index {
